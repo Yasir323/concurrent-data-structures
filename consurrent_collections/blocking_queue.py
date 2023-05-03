@@ -36,6 +36,8 @@ class BlockingQueue(ABC):
 
         :param item: Value to be inserted
 
+        :raises ValueError: if item is None
+
         :return: True if successful otherwise False
         """
         pass
@@ -47,7 +49,7 @@ class BlockingQueue(ABC):
 
         :param item: Value to be inserted
 
-        :raises InterruptedError: if Interrupted while waiting
+        :raises ValueError: if item is None
         """
         pass
 
